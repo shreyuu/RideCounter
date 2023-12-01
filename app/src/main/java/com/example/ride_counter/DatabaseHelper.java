@@ -44,6 +44,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
         return result;
     }
+
+    public void deleteEntry(String entry) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(TABLE_NAME, COL_DATE + "=?", new String[]{entry});
+        db.close();
+    }
+
     public List<String> getAllEntries() {
         List<String> entriesList = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
