@@ -1,6 +1,5 @@
 <!-- res/layout/activity_main.xml -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,23 +10,29 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/chau_philomene_one"
         android:text="RIDE COUNTER"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mark Date"
+        android:layout_marginTop="40dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:text="Mark Date" />
 
     <Button
         android:id="@+id/viewEntriesButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View Entries"
         android:layout_gravity="center_horizontal"
-        android:onClick="onViewEntriesButtonClick"/>
+        android:onClick="onViewEntriesButtonClick"
+        android:text="View Entries" />
 
     <!-- Other UI elements can be added here if needed -->
 

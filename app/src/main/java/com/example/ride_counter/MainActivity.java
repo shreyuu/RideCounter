@@ -38,18 +38,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String getCurrentDate() {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss", Locale.getDefault());
         return dateFormat.format(new Date());
     }
 
     private void showToast(String message) {
         Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
     }
-    // In MainActivity.java
     public void onViewEntriesButtonClick(View view) {
         Intent intent = new Intent(this, EntriesActivity.class);
         startActivity(intent);
     }
-
 }
 
